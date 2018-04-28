@@ -1,3 +1,5 @@
+/*Universal Styles*/
+
 html {
   box-sizing: border-box;
 }
@@ -13,27 +15,277 @@ body {
   margin: 0 auto;
 }
 
-/*Header Content*/
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 24px auto;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 12px 0;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 12px 0;
+  text-align: left;
+}
+
+.BackColor {
+  background-color: gray;
+}
+
+.center-content-col {
+  justify-content: center;
+}
+
+.start-content-col {
+  justify-content: flex-start;
+}
+
+/*Header Content Start*/
 
 header {
   height: 64px;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.header-container,
-.logo {
+.header-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.logo, nav {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+}
+
+.logo span {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .logo img {
-  margin: auto 1rem auto 0.5rem;
-  height: 2rem;
+  margin: auto 0 auto 0.5rem;
+  height: 3rem;
 }
 
 nav ul li {
- margin: 0.66rem 0;
+ margin-left: 16px;
  display: inline-block;
+ font-size: 1.5rem;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: black;
 }
 
 /*Header Content End*/
+
+/*Main Content Start*/
+
+/*Banner Content*/
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.banner, .information, .thesis {
+    width: 100%;
+    display: flex;
+}
+
+.left-column {
+    width: 60%;
+    padding: 32px 24px 32px 24px;
+}
+
+.left-column img {
+  width: 100%;
+}
+
+.right-column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.headliner {
+  padding-left: 12px;
+  width: 80%;
+}
+
+.headliner button {
+  width: 80%;
+  padding: 8px 0;
+}
+
+.headliner button span {
+  width: 80%;
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+
+.headliner p {
+  width: 80%;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+/*Information Content*/
+
+.information .left-column {
+  padding-bottom: 0;
+}
+
+.information h1 {
+  margin-top: 32px;
+}
+
+.information p {
+  margin-bottom: 32px;
+}
+
+.information ul, .thesis ul {
+  margin-top: 16px;
+  display:inline-flex;
+  flex-direction: column;
+}
+
+.information ul li, .thesis ul li {
+  display: flex;
+}
+
+.information ul li img, .thesis ul li img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+  align-self: center;
+}
+
+.information ul li:last-child {
+  background-color: gray;
+}
+
+.information .news-content, .thesis .news-content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Learning Content*/
+
+.learning {
+  background-color: gray;
+}
+
+.learning  h2 {
+  margin: 0;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.learning ul {
+  margin: 0 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.learning ul li {
+  width: 100%;
+  margin-right: 32px;
+  display: block;
+}
+
+.learning ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.learning ul li:last-child {
+  margin-right: 0;
+}
+
+.learning ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.learning h3 {
+  margin-bottom: 16px;
+}
+
+.courses {
+  padding: 16px;
+  background-color: white;
+  margin-top: -3px;
+}
+
+.courses p:first-of-type {
+ text-transform: uppercase;
+}
+
+.courses p {
+  margin: 8px 0;
+}
+
+.first-row {
+  padding-bottom: 32px;
+}
+
+.second-row {
+  padding-bottom: 32px;
+}
+
+/*Thesis Exhibit Content*/
+
+.thesis ul li:first-child {
+  background-color: gray;
+}
+
+.section-header h2 {
+  margin: 32px auto;
+  text-align: center;
+}
+
+.thesis .left-column{
+  padding-top: 0;
+}
+
+.thesis ul {
+  margin-top:0;
+}
+
+.left-column video {
+  width:100%;
+}
+
+/*Main Content End*/
+
+/*Footer Content Start*/
+
+footer {
+  border-top: 1px solid black;
+  height: 50px;
+}
+
+.footer-content {
+  margin: 16px 24px 0 24px;
+  display:flex;
+  justify-content: space-between;
+}
+
+
+
+/*Fotter Content End*/
