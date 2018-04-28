@@ -10,5 +10,30 @@ html {
 }
 
 body {
-
+  margin: 0 auto;
 }
+
+/*Header Content*/
+
+header {
+  height: 64px;
+}
+
+.header-container,
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  margin: auto 1rem auto 0.5rem;
+  height: 2rem;
+}
+
+nav ul li {
+ margin: 0.66rem 0;
+ display: inline-block;
+}
+
+/*Header Content End*/
