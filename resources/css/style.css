@@ -148,7 +148,7 @@ nav ul li a {
 .headliner button {
   width: 100%;
   padding: 8px 0;
-  background-color: black;
+  background-color: rgb(74, 74, 74);
   border: none;
 }
 
@@ -156,7 +156,7 @@ nav ul li a {
   width: 80%;
   padding: 8px 0;
   font-size: 1.1rem;
-  color: white;
+  color: rgb(255,255,255);
 }
 
 .headliner p {
@@ -263,7 +263,7 @@ nav ul li a {
 
 .courses {
   padding: 16px;
-  background-color: white;
+  background-color: rgb(255,255,255);
   margin-top: -3px;
   overflow: hidden;
 }
@@ -332,6 +332,88 @@ footer {
   color: rgb(118, 118, 118);
 }
 
-
-
 /*Fotter Content End*/
+
+/*Mobile View Start*/
+
+.header-container-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 927px) {
+
+  /*Header mobile start*/
+  .header-container {
+    display: none;
+  }
+
+  .header-container-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .headliner {
+    padding: 0;
+  }
+
+  /*Header mobile end*/
+
+  /*Banner mobile start*/
+  .banner {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column {
+    padding: 0 0 32px 0;
+  }
+
+  .right-column {
+    flex-direction: row;
+    padding: 0 0 32px 0;
+    justify-content: center;
+  }
+
+  .right-column button {
+    background-color: rgb(155, 155, 155);
+  }
+
+  .right-column h1 {
+    margin-top: 0px;
+  }
+  /*Banner mobile end*/
+
+  /*Information mobile start*/
+
+  .information .left-column {
+    display: none;
+  }
+
+  .information ul li, .thesis ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information ul li img, .thesis ul li img {
+    align-self: center;
+    height: 225px;
+    width: 94%;
+    padding-top: 0;
+  }
+
+  .information ul li:last-child {
+    background-color: rgb(243, 245, 245);
+  }
+
+  .news-content {
+    padding: 0 32px 64px 32px;
+  }
+  /*Information mobile end*/
+
+}
+
+/*Mobile View End*/
