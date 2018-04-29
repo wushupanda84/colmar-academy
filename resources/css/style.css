@@ -1,5 +1,7 @@
 /*Universal Styles*/
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
 html {
   box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ html {
 
 html {
   font-size: 16px;
+  font-family: "Noto Sans", serif;
 }
 
 body {
@@ -31,7 +34,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 12px 0;
+  margin-bottom: 12px;
   text-align: left;
 }
 
@@ -51,10 +54,14 @@ h3 {
 
 header {
   height: 64px;
-  margin: 0 24px;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
 }
 
 .header-container {
@@ -71,6 +78,11 @@ header {
 .logo span {
   text-transform: uppercase;
   font-size: 2rem;
+  font-weight: bold;
+}
+
+.hue {
+  color: #cccccc;
 }
 
 .logo img {
@@ -94,10 +106,12 @@ nav ul li a {
 /*Main Content Start*/
 
 /*Banner Content*/
-.main {
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+  top: 64px;
 }
 
 .banner, .information, .thesis {
@@ -127,18 +141,21 @@ nav ul li a {
 }
 
 .headliner button {
-  width: 80%;
+  width: 100%;
   padding: 8px 0;
+  background-color: black;
+  border: none;
 }
 
 .headliner button span {
   width: 80%;
   padding: 8px 0;
   font-size: 1.1rem;
+  color: white;
 }
 
 .headliner p {
-  width: 80%;
+  /*width: 80%;*/
   font-size: 1.5rem;
   margin-bottom: 24px;
 }
@@ -184,6 +201,11 @@ nav ul li a {
   flex-direction: column;
 }
 
+.information .news-content a, .thesis .news-content a {
+  padding-top: 8px;
+  text-decoration: none;
+}
+
 /*Learning Content*/
 
 .learning {
@@ -200,12 +222,15 @@ nav ul li a {
   margin: 0 72px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .learning ul li {
   width: 100%;
   margin-right: 32px;
-  display: block;
+  display: flex;
+  height: auto;
+  background-color: white;
 }
 
 .learning ul li a {
@@ -230,6 +255,7 @@ nav ul li a {
   padding: 16px;
   background-color: white;
   margin-top: -3px;
+  overflow: hidden;
 }
 
 .courses p:first-of-type {
@@ -249,6 +275,10 @@ nav ul li a {
 }
 
 /*Thesis Exhibit Content*/
+
+.thesis {
+  margin-bottom: 32px;
+}
 
 .thesis ul li:first-child {
   background-color: gray;
@@ -276,14 +306,16 @@ nav ul li a {
 /*Footer Content Start*/
 
 footer {
+  margin-top: 32px;
   border-top: 1px solid black;
   height: 50px;
+  display:flex;
+  justify-content: space-between;
 }
 
 .footer-content {
   margin: 16px 24px 0 24px;
-  display:flex;
-  justify-content: space-between;
+
 }
 
 
