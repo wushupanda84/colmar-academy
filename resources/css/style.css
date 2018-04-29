@@ -12,6 +12,7 @@ html {
 html {
   font-size: 16px;
   font-family: "Noto Sans", serif;
+  color: rgb(74,74,74);
 }
 
 body {
@@ -38,8 +39,12 @@ h3 {
   text-align: left;
 }
 
-.BackColor {
-  background-color: gray;
+.BackColorBanner {
+  background-color: rgb(216, 216, 216);
+}
+
+.backColorBright {
+  background-color: rgb(243, 245, 245);
 }
 
 .center-content-col {
@@ -60,7 +65,7 @@ header {
   justify-content: center;
   position: fixed;
   z-index: 10;
-  background-color: white;
+  background-color: rgb(255,255,255);
   width: 100%;
 }
 
@@ -82,7 +87,7 @@ header {
 }
 
 .hue {
-  color: #cccccc;
+  color: rgb(155,155,155);
 }
 
 .logo img {
@@ -98,7 +103,7 @@ nav ul li {
 
 nav ul li a {
    text-decoration: none;
-   color: black;
+   color: rgb(74,74,74);
 }
 
 /*Header Content End*/
@@ -192,7 +197,7 @@ nav ul li a {
 }
 
 .information ul li:last-child {
-  background-color: gray;
+  background-color: rgb(216, 216, 216);
 }
 
 .information .news-content, .thesis .news-content {
@@ -204,12 +209,13 @@ nav ul li a {
 .information .news-content a, .thesis .news-content a {
   padding-top: 8px;
   text-decoration: none;
+  color: rgb(74, 144, 226);
 }
 
 /*Learning Content*/
 
 .learning {
-  background-color: gray;
+  background-color: rgb(234, 235, 236);
 }
 
 .learning  h2 {
@@ -230,12 +236,16 @@ nav ul li a {
   margin-right: 32px;
   display: flex;
   height: auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .learning ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(74, 74, 74);
+}
+
+.learning ul li a p {
+  color: rgb(118, 118, 118);
 }
 
 .learning ul li:last-child {
@@ -278,15 +288,18 @@ nav ul li a {
 
 .thesis {
   margin-bottom: 32px;
+  background-color: rgb(243, 245, 245);
 }
 
 .thesis ul li:first-child {
-  background-color: gray;
+  background-color: rgb(216, 216, 216);
 }
 
 .section-header h2 {
-  margin: 32px auto;
+  padding: 32px 0;
   text-align: center;
+  background-color: rgb(243, 245, 245);
+  margin:0;
 }
 
 .thesis .left-column{
@@ -307,15 +320,16 @@ nav ul li a {
 
 footer {
   margin-top: 32px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(224, 226, 226);
   height: 50px;
   display:flex;
   justify-content: space-between;
+  background-color: rgb(243, 245, 245);
 }
 
 .footer-content {
   margin: 16px 24px 0 24px;
-
+  color: rgb(118, 118, 118);
 }
 
 
