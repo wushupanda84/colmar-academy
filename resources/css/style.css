@@ -412,6 +412,54 @@ footer {
   .news-content {
     padding: 0 32px 64px 32px;
   }
+
+  /*Learning section start*/
+
+  .learning ul {
+    flex-direction: column;
+  }
+
+  .courses {
+    margin-top: 0;
+    background-color: rgb(216, 216, 216);
+    padding: 16px 0 24px 16px;
+  }
+
+  .courses h3{
+    margin:0;
+  }
+
+
+  .learning ul li {
+    background-color: rgb(216, 216, 216);
+    margin-bottom: 8px;
+  }
+
+  .learning ul li img,
+  .learning ul li p {
+    display: none;
+  }
+
+  .first-row {
+    padding-bottom: 0;
+  }
+  /*Learning section end*/
+
+  /*thesis section start*/
+  .thesis .right-column {
+    display: none;
+  }
+
+    .thesis .left-column {
+      padding-bottom: 24px;
+    }
+
+  .thesis .left-column h2,
+  .thesis .left-column p {
+    display: none;
+  }
+
+  /*thesis section end*/
   /*Information mobile end*/
 
 }
